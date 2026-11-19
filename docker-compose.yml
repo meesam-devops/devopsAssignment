@@ -22,7 +22,8 @@ services:
     security_opt: ["no-new-privileges:true"]
     logging: *default-logging
     healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:8080/health"]
+      # bash built-in /dev/tcp: no curl needed inside the image
+      test: ["CMD", "bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8080 && printf 'GET /health HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q Healthy <&3"]
       interval: 10s
       timeout: 3s
       retries: 3
