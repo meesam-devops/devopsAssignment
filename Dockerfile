@@ -20,5 +20,3 @@ EXPOSE 8080
 HEALTHCHECK --interval=10s --timeout=3s --start-period=10s --retries=3 \
   CMD ["bash", "-c", "exec 3<>/dev/tcp/127.0.0.1/8080 && printf 'GET /health HTTP/1.0\\r\\n\\r\\n' >&3 && grep -q Healthy <&3"]
 ENTRYPOINT ["dotnet", "DevOpsAssessment.dll"]
-grep -n "apt-get\|curl" Dockerfile || echo "OK - no apt/curl in Dockerfile"
-
