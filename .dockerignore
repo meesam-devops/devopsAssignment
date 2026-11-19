@@ -1,0 +1,12 @@
+bin/
+obj/
+publish/
+.git/
+.github/
+.env
+*.env
+.deploy/
+evidence/
+nginx/
+scripts/
+*.md
