@@ -1,5 +1,5 @@
-==> ROLLBACK: 1.0.0 -> 2.0.0
-==> Deploying tag '2.0.0' (currently running: 1.0.0)
+==> ROLLBACK: 2.0.0 -> 1.0.0
+==> Deploying tag '1.0.0' (currently running: 2.0.0)
  Container devops-assessment-nginx-1 Running 
  Container devops-assessment-app-1 Recreate 
  Container devops-assessment-app-1 Recreated 
@@ -7,6 +7,6 @@
  Container devops-assessment-app-1 Started 
 ==> Waiting for http://localhost/health (max 60s)
 ==> DEPLOY OK
-version : {"version":"2.0.0"}
-response: {"application":"DevOpsAssessment","message":"Assessment deployment successful","version":"2.0.0","environment":"Production","timestampUtc":"2026-11-19T12:29:31.4742391+00:00"}
-image   : ghcr.io/meesam-devops/devops-assessment:2.0.0 sha256:57a031345d65fdb77ca00342aa01437e4f3d47befd5537d75de1ca8a0439a636
+version : {"version":"1.0.0"}
+response: {"application":"DevOpsAssessment","message":"Assessment deployment successful","version":"1.0.0","environment":"Production","timestampUtc":"2026-11-19T12:34:14.3035907+00:00"}
+image   : ghcr.io/meesam-devops/devops-assessment:1.0.0 sha256:757bc1a7977c810a41370b3875cead7cfce9c47fb3a8608207700c6983b2c4d6
