@@ -1,0 +1,5 @@
+==> Deploying tag '2.0.0' (currently running: 1.0.0)
+ Image ghcr.io/meesam-devops/devops-assessment:2.0.0 Pulling 
+ Image ghcr.io/meesam-devops/devops-assessment:2.0.0 Error failed to resolve reference "ghcr.io/meesam-devops/devops-assessment:2.0.0": ghcr.io/meesam-devops/devops-assessment:2.0.0: not found
+Error response from daemon: failed to resolve reference "ghcr.io/meesam-devops/devops-assessment:2.0.0": ghcr.io/meesam-devops/devops-assessment:2.0.0: not found
+DEPLOY FAILED: could not start image tag '2.0.0' (does it exist?)

@@ -1,0 +1,36 @@
+==> Deploying tag '1.0.0' (currently running: none)
+ Image ghcr.io/meesam-devops/devops-assessment:1.0.0 Pulling 
+ ce972923c792 Pulling fs layer 0B
+ 52e5c8dd31e8 Pulling fs layer 0B
+ 6df46ca13b02 Pulling fs layer 0B
+ 09633c4f4375 Pulling fs layer 0B
+ 6fbc05e14353 Pulling fs layer 0B
+ e256ed9ead4a Pulling fs layer 0B
+ 702952660ae3 Pulling fs layer 0B
+ 8e8df94085bf Pulling fs layer 0B
+ c09e35bf3b35 Pulling fs layer 0B
+ 702952660ae3 Already exists 0B
+ ce972923c792 Already exists 0B
+ 8e8df94085bf Already exists 0B
+ c09e35bf3b35 Already exists 0B
+ 6df46ca13b02 Already exists 0B
+ 09633c4f4375 Already exists 0B
+ 52e5c8dd31e8 Download complete 0B
+ e256ed9ead4a Download complete 0B
+ 91abbd9aa762 Download complete 0B
+ 6fbc05e14353 Downloading 2.097MB
+ 6fbc05e14353 Download complete 0B
+ e256ed9ead4a Pull complete 0B
+ 6fbc05e14353 Pull complete 0B
+ 52e5c8dd31e8 Pull complete 0B
+ Image ghcr.io/meesam-devops/devops-assessment:1.0.0 Pulled 
+ Container devops-assessment-nginx-1 Running 
+ Container devops-assessment-app-1 Recreate 
+ Container devops-assessment-app-1 Recreated 
+ Container devops-assessment-app-1 Starting 
+ Container devops-assessment-app-1 Started 
+==> Waiting for http://localhost/health (max 60s)
+==> DEPLOY OK
+version : {"version":"1.0.0"}
+response: {"application":"DevOpsAssessment","message":"Assessment deployment successful","version":"1.0.0","environment":"Production","timestampUtc":"2026-11-19T11:53:08.3943113+00:00"}
+image   : ghcr.io/meesam-devops/devops-assessment:1.0.0 sha256:757bc1a7977c810a41370b3875cead7cfce9c47fb3a8608207700c6983b2c4d6

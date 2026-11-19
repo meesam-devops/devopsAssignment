@@ -1,0 +1,18 @@
+### 1. healthy
+2026-11-19T11:54:05Z OK    http://localhost/health -> HTTP 200
+### 2. stopping app
+ Container devops-assessment-app-1 Stopping 
+ Container devops-assessment-app-1 Stopped 
+### 3. failure signal
+2026-11-19T11:54:05Z ALERT http://localhost/health -> HTTP 502 (application unavailable)
+monitor exit code=1
+### 4. nginx sees it
+nginx-1  | 172.18.0.1 - - [19/Nov/2026:11:54:05 +0000] "GET /health HTTP/1.1" 200 17 "-" "curl/8.18.0" "-"
+nginx-1  | 2026/11/19 11:54:05 [error] 22#22: *40 app could not be resolved (2: Server failure), client: 172.18.0.1, server: _, request: "GET /health HTTP/1.1", host: "localhost"
+nginx-1  | 172.18.0.1 - - [19/Nov/2026:11:54:05 +0000] "GET /health HTTP/1.1" 502 150 "-" "curl/8.18.0" "-"
+### 5. restoring
+ Container devops-assessment-app-1 Starting 
+ Container devops-assessment-app-1 Started 
+### 6. recovered
+2026-11-19T11:54:20Z OK    http://localhost/health -> HTTP 200
+monitor exit code=0

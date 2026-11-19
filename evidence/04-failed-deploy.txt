@@ -1,0 +1,5 @@
+==> Deploying tag '9.9.9' (currently running: 1.0.0)
+ Image ghcr.io/meesam-devops/devops-assessment:9.9.9 Pulling 
+ Image ghcr.io/meesam-devops/devops-assessment:9.9.9 Error failed to resolve reference "ghcr.io/meesam-devops/devops-assessment:9.9.9": ghcr.io/meesam-devops/devops-assessment:9.9.9: not found
+Error response from daemon: failed to resolve reference "ghcr.io/meesam-devops/devops-assessment:9.9.9": ghcr.io/meesam-devops/devops-assessment:9.9.9: not found
+DEPLOY FAILED: could not start image tag '9.9.9' (does it exist?)
